@@ -6,7 +6,7 @@ This test evaluates how the data flow analysis mechanism handles two fundamental
 2. `private` variables should **not be read** before being written.
 
 ## Test Description
-The image `Test_case.png` shows a simple C program where variable `a` is declared in a firstprivate clause and is written before it is read, which is incorrect. Similarly, variable `b` is declared in a private clause and is read before it is written, which also violates expected behavior.
+The image `Test_case.png` shows a simple C + OpenMP program where variable `a` is declared in a firstprivate clause and is written before it is read, which is incorrect. Similarly, variable `b` is declared in a private clause and is read before it is written, which also violates expected behavior.
 
 
 ##  Workflow of the Mechanism
